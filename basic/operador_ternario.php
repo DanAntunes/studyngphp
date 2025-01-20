@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curso PHP</title>
-  <link rel="stylesheet" href="../basic/css/php.css">
+  <link rel="stylesheet" href="../../phpstudy/basic/css/php.css">
 </head>
 <body>
   <?php 
@@ -34,7 +34,7 @@
     
   ?>
 
-  <h1>Detalhes do pedido</h1>
+  <h1 class="titulo">Detalhes do pedido</h1>
     <p>Possui cartão da loja ? <?= $usuario_possui_cartao_loja ? 'SIM' : 'NÃO' ?>
     </p>
     <P>Valor da compra: <?= $valor_compra ?> </P>
