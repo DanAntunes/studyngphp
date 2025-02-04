@@ -14,6 +14,10 @@
     // string to lower
     echo $texto . "<br>";
     echo strtolower($texto) . "<br>";
+
+    // string to upper
+    echo $texto . "<br>";
+    echo strtoupper($texto) . "<br>";
   ?>
 </body>
 </html>
