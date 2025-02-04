@@ -29,6 +29,11 @@
     // string length
     echo $texto . "<br>";
     echo strlen($texto) . "<br>";
+
+    echo "<hr>";
+    // string replace
+    echo $texto . "<br>";
+    echo str_replace('PHP', 'JavaScript', $texto) . "<br>";
   ?>
 </body>
 </html>
