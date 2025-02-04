@@ -15,9 +15,15 @@
     echo $texto . "<br>";
     echo strtolower($texto) . "<br>";
 
+    echo "<hr>";
     // string to upper
     echo $texto . "<br>";
     echo strtoupper($texto) . "<br>";
+
+    echo "<hr>";
+    // upper case first
+    echo $texto . "<br>";
+    echo ucfirst($texto) . "<br>";
   ?>
 </body>
 </html>
