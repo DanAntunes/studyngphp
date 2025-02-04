@@ -24,6 +24,11 @@
     // upper case first
     echo $texto . "<br>";
     echo ucfirst($texto) . "<br>";
+
+    echo "<hr>";
+    // string length
+    echo $texto . "<br>";
+    echo strlen($texto) . "<br>";
   ?>
 </body>
 </html>
