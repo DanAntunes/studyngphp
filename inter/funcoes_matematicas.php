@@ -19,7 +19,8 @@
    $numR = 7.5; // 0. e .4 => arredonda para baixo, 0.5 e .9 => arredonda para cima
    echo round($numR) . '<br>'; // arredonda com base na fração
    echo "<hr>";
-   echo rand(1, 20) . '<br>'; // gera um número aleatório
+   echo rand() . '<br>'; // gera um número aleatório
+   echo "<br>" . getrandmax(); // retorna o maior número que a função rand pode gerar
   ?>
 </body>
 </html>
