@@ -34,6 +34,11 @@
     // string replace
     echo $texto . "<br>";
     echo str_replace('PHP', 'JavaScript', $texto) . "<br>";
+
+    echo "<hr>";
+    // substring
+    echo $texto . "<br>";
+    echo substr($texto, 0 , 5);
   ?>
 </body>
 </html>
