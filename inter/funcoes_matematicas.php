@@ -15,6 +15,9 @@
    echo "<hr>";
    $numF = 7.8;
    echo floor($numF) . '<br>'; // arredonda para baixo
+   echo "<hr>";
+   $numR = 7.2;
+    echo round($numR) . '<br>'; // arredonda com base na fração
 
   ?>
 </body>
