@@ -16,9 +16,10 @@
    $numF = 7.8;
    echo floor($numF) . '<br>'; // arredonda para baixo
    echo "<hr>";
-   $numR = 7.2; // 0. e .4 => arredonda para baixo, 0.5 e .9 => arredonda para cima
-    echo round($numR) . '<br>'; // arredonda com base na fração
-
+   $numR = 7.5; // 0. e .4 => arredonda para baixo, 0.5 e .9 => arredonda para cima
+   echo round($numR) . '<br>'; // arredonda com base na fração
+   echo "<hr>";
+   echo rand(1, 20) . '<br>'; // gera um número aleatório
   ?>
 </body>
 </html>
