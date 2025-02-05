@@ -9,7 +9,13 @@
 <body>
   <h2>Funções Matématicas</h2>
   <?php
-  
+
+   $numC = 7.3;
+   echo ceil($numC) . '<br>'; // arredonda para cima
+   echo "<hr>";
+   $numF = 7.8;
+   echo floor($numF) . '<br>'; // arredonda para baixo
+
   ?>
 </body>
 </html>
