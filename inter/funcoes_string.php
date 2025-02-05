@@ -38,7 +38,7 @@
     echo "<hr>";
     // substring
     echo $texto . "<br>";
-    echo substr($texto, 0 , 5);
+    echo substr($texto, 0 , 14) . '...';
   ?>
 </body>
 </html>
