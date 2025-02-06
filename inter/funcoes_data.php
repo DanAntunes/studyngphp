@@ -11,6 +11,9 @@
   <?php
   // Recupera a data atual / DATA CORRENTE
   echo date('d/m/Y H:i'); //Dia/Mês/Ano Hora:Minuto
+
+  echo '<br>';
+  echo  date_default_timezone_get(); //Recupera o fuso horário padrão
   ?>  
 </body>
 </html>
