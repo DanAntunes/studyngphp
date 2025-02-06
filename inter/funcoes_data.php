@@ -7,9 +7,10 @@
   <title>Curso PHP</title>
 </head>
 <body>
-  <h2>Funções Data</h2>
+  <h1>Funções Data</h1>
   <?php
-
-  ?>
+  // Recupera a data atual / DATA CORRENTE
+  echo date('d/m/Y H:i'); //Dia/Mês/Ano Hora:Minuto
+  ?>  
 </body>
 </html>
