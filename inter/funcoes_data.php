@@ -14,6 +14,13 @@
 
   echo '<br>';
   echo  date_default_timezone_get(); //Recupera o fuso horário padrão
+  echo '<hr>';
+  date_default_timezone_set('America/Sao_Paulo'); //Define o fuso horário padrão
+  echo date_default_timezone_get();
+  echo '<br>';
+  echo date('d/m/Y H:i'); //Dia/Mês/Ano Hora:Minuto
+  
+  
   ?>  
 </body>
 </html>
