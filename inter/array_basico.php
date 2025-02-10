@@ -12,10 +12,14 @@
 
   //sequenciasis (numéricos)
   $lista_frutas = array('Banana', 'Maçã', 'Morango', 'Uva', 'Abacaxi');
-  var_dump($lista_frutas);  //mostra o tipo e o tamanho do array
-  echo '<hr>';
-  print_r($lista_frutas);  //mostra o conteúdo do array
-
+  
+  echo '<pre>';
+    var_dump($lista_frutas);  //mostra o tipo e o tamanho do array
+  echo '</pre>';
+    echo '<hr>';
+  echo '<pre>';
+    print_r($lista_frutas);  //mostra o conteúdo do array
+  echo '</pre>';
   //associativos
 
 
