@@ -33,11 +33,13 @@
     'x' =>'Morango', 
     'z' => 'Uva', 
     '2' => 'Abacaxi');
+    $lista_frutas2['w'] = 'Abacate'; //adiciona um novo elemento ao array
   echo '<pre>';
    var_dump($lista_frutas2);
   echo '</pre>';
-
-  echo $lista_frutas2['x']; //mostra o conteúdo do array na posição x
+  
+  
+  echo $lista_frutas2['w']; //mostra o conteúdo do array na posição x
   ?>  
 </body>
 </html>
