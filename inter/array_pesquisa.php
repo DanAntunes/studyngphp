@@ -24,6 +24,7 @@
   echo '<br>';
   echo  array_search('Minecraft', $lista_jogos) 
  
+  // in_array em caso de array multidimensional : in_array('GTA V', $entrenimento['jogos']);
   ?>  
 </body>
 </html>
