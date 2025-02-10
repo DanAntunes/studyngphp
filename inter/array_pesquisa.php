@@ -20,6 +20,10 @@
   echo in_array('GTA V', $lista_jogos) ? 
     'O jogo GTA V está na lista de jogos' : 
     'O jogo GTA V não está na lista de jogos';
+  
+  echo '<br>';
+  echo  array_search('Minecraft', $lista_jogos) 
+ 
   ?>  
 </body>
 </html>
