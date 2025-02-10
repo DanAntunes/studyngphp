@@ -43,6 +43,12 @@
   $segundos_existem_dia = 24 * 60 * 60;
   echo '<br>';
   echo 'Um dia possui ' . $segundos_existem_dia . ' segundos';
+  
+  $diferenca_de_dias_entre_as_datas = $diferenca_times / $segundos_existem_dia;
+  echo '<br>';
+  echo 'A diferença em dias é: ' . $diferenca_de_dias_entre_as_datas . '<br>';
+  
+  
   ?>  
 </body>
 </html>
