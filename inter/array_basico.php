@@ -24,10 +24,18 @@
   echo '</pre>';
 
   echo '<hr>';
-  
+  echo $lista_frutas[2]; //mostra o conteúdo do array na posição 2
+  echo '<hr>';
   //associativos
-  
-
+  $lista_frutas2 = array( 
+    'a' => 'Banana', 
+    'b' => 'Maçã', 
+    'x' =>'Morango', 
+    'z' => 'Uva', 
+    '2' => 'Abacaxi');
+  echo '<pre>';
+   var_dump($lista_frutas2);
+  echo '</pre>';
   ?>  
 </body>
 </html>
