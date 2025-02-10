@@ -11,8 +11,10 @@
   <?php
 
   //sequenciasis (numéricos)
-  $lista_frutas = array('Banana', 'Maçã', 'Morango', 'Uva', 'Abacaxi');
-  
+  //$lista_frutas = array('Banana', 'Maçã', 'Morango', 'Uva', 'Abacaxi');
+  $lista_frutas = ['Banana', 'Maçã', 'Morango', 'Uva', 'Abacaxi'];//outra forma de criar um array
+  $lista_frutas[] = 'Abacate'; //adiciona um novo elemento ao array
+
   echo '<pre>';
     var_dump($lista_frutas);  //mostra o tipo e o tamanho do array
   echo '</pre>';
@@ -20,8 +22,11 @@
   echo '<pre>';
     print_r($lista_frutas);  //mostra o conteúdo do array
   echo '</pre>';
-  //associativos
 
+  echo '<hr>';
+  
+  //associativos
+  
 
   ?>  
 </body>
