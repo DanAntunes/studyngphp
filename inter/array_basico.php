@@ -9,7 +9,16 @@
 <body>
   <h1>Array Básico</h1>
   <?php
-  
+
+  //sequenciasis (numéricos)
+  $lista_frutas = array('Banana', 'Maçã', 'Morango', 'Uva', 'Abacaxi');
+  var_dump($lista_frutas);  //mostra o tipo e o tamanho do array
+  echo '<hr>';
+  print_r($lista_frutas);  //mostra o conteúdo do array
+
+  //associativos
+
+
   ?>  
 </body>
 </html>
