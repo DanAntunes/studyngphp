@@ -34,7 +34,11 @@
   echo $data_final . ' - ' . $time_final . '<br>';
 
   $diferenca_times = $time_final - $time_inicial;
+  echo '<br>';
   echo 'A diferença de segundos entre a data inicial e final é: ' . $diferenca_times . '<br>';
+  $diferenca_timesAbs =  abs($time_inicial - $time_final);
+  echo '<br>';
+  echo '(Usando função Abs) A diferença de segundos entre a data inicial e final é: ' . $diferenca_timesAbs . '<br>';
   
   ?>  
 </body>
