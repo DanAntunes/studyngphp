@@ -28,7 +28,10 @@
   //01/01/1970 -- 2024-04-24 (js -> milisegundos / php -> segundos)
   
   $time_inicial = strtotime($data_inicial);
+  $time_final = strtotime($data_final);
   echo $data_inicial . ' - ' . $time_inicial . '<br>';
+  echo '<br>';
+  echo $data_final . ' - ' . $time_final . '<br>';
   
   ?>  
 </body>
