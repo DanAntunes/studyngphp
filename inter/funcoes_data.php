@@ -19,7 +19,16 @@
   echo date_default_timezone_get();
   echo '<br>';
   echo date('d/m/Y H:i'); //Dia/Mês/Ano Hora:Minuto
+  echo '<hr>';
+
+  $data_inicial = '2024-04-24';
+  $data_final = '2025-01-22';
+
+  //Timestamp
+  //01/01/1970 -- 2024-04-24 (js -> milisegundos / php -> segundos)
   
+  $time_inicial = strtotime($data_inicial);
+  echo $data_inicial . ' - ' . $time_inicial . '<br>';
   
   ?>  
 </body>
