@@ -9,7 +9,17 @@
 <body>
   <h1>Array Métodos de Pesquisa</h1>
   <?php
+  // in_array() - retorna true ou false para a existência de um determinado elemento no array
+  // array_search() - retorna o índice do elemento pesquisado caso ele exista, caso contrário retorna null
+  $lista_jogos = ['God of War', 'GTA V', 'Minecraft', 'The Witcher 3', 'GTA San Andreas'];
 
+  echo '<pre>';
+  print_r($lista_jogos);
+  echo '</pre>';
+
+  echo in_array('GTA V', $lista_jogos) ? 
+    'O jogo GTA V está na lista de jogos' : 
+    'O jogo GTA V não está na lista de jogos';
   ?>  
 </body>
 </html>
