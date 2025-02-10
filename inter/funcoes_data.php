@@ -40,6 +40,9 @@
   echo '<br>';
   echo '(Usando função Abs) A diferença de segundos entre a data inicial e final é: ' . $diferenca_timesAbs . '<br>';
   
+  $segundos_existem_dia = 24 * 60 * 60;
+  echo '<br>';
+  echo 'Um dia possui ' . $segundos_existem_dia . ' segundos';
   ?>  
 </body>
 </html>
