@@ -20,7 +20,8 @@
       echo 'Não, não é um array';
     };
     echo '<hr>';
-
+    
+    echo '<h2>array_keys</h2>';
     $array2 = [1 => 'a', 7 => 'b', 18 => 'c'];
     echo '<pre>';
     print_r($array2);
