@@ -9,7 +9,9 @@
 <body>
   <h1>Funções nativas para manipular arrays</h1>
   <?php
-    $array = 'string';
+
+    echo '<h2>is_array</h2>';
+    $array = ['notebook', 'desktop', 'smartphone'];
     $retorno = is_array($array);
 
     if ($retorno) {
@@ -17,6 +19,19 @@
     } else {
       echo 'Não, não é um array';
     };
+    echo '<hr>';
+
+    $array2 = [1 => 'a', 7 => 'b', 18 => 'c'];
+    echo '<pre>';
+    print_r($array2);
+    echo '</pre>';
+
+    $chaves_array2 = array_keys($array2);
+    echo '<pre>';
+    print_r($chaves_array2);
+    echo '</pre>';
+
+
   ?>  
 </body>
 </html>
