@@ -14,6 +14,7 @@
    $funcioario1 = null;
    $funcionario2 = '';
 
+  //valores null
   if (is_null($funcioario1)) {
     echo 'Sim, a variável é null';
   } else {
@@ -24,6 +25,22 @@
     echo 'Sim, a variável é null';
   } else {
     echo 'Não, a variável não é null';
+  }
+
+  echo '<br>';
+  echo '<hr>';
+
+  //valores empty
+  if (empty($funcioario1)) {
+    echo 'Sim, a variável é empty';
+  } else {
+    echo 'Não, a variável não é empty';
+  }
+  echo '<br>';
+  if (empty($funcionario2)) {
+    echo 'Sim, a variável é empty';
+  } else {
+    echo 'Não, a variável não é empty';
   }
   ?>  
 </body>
