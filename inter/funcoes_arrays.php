@@ -9,7 +9,14 @@
 <body>
   <h1>Funções nativas para manipular arrays</h1>
   <?php
-  
+    $array = 'string';
+    $retorno = is_array($array);
+
+    if ($retorno) {
+      echo 'Sim, é um array';
+    } else {
+      echo 'Não, não é um array';
+    };
   ?>  
 </body>
 </html>
