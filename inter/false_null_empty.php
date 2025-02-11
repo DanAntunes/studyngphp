@@ -9,8 +9,22 @@
 <body>
   <h1>False | Null | Empty</h1>
   <?php
-  
+   //false (True ou False) - tipo variavel boolean
+   //null e empty - valores especiais
+   $funcioario1 = null;
+   $funcionario2 = '';
 
+  if (is_null($funcioario1)) {
+    echo 'Sim, a variável é null';
+  } else {
+    echo 'Não, a variável não é null';
+  }
+  echo '<br>';
+  if (is_null($funcionario2)) {
+    echo 'Sim, a variável é null';
+  } else {
+    echo 'Não, a variável não é null';
+  }
   ?>  
 </body>
 </html>
