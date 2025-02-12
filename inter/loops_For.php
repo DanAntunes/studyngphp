@@ -20,8 +20,8 @@
   // } while (condicao);
 
   // Sintaxe For
-  for (vairavel; condicao; incremento) {
-    # code...
+  for ($x = 1; $x <= 10; $x++) {
+    echo "O valor de x é: $x <br>";
   }
   ?>  
 </body>
