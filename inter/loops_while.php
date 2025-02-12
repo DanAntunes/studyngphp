@@ -14,7 +14,7 @@
     echo '--- Inicio do Loop --' . '<br>';
     while($num <= 10) {
       echo $num . '<br>';
-      $num++;
+      $num++; //incremento - critério de parada
     }
     echo '--- Final do Loop --';
   ?>  
