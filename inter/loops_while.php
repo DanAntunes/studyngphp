@@ -12,7 +12,7 @@
     $num = 1;
     //operadores comparação / lógicos
     echo '--- Inicio do Loop --' . '<br>';
-    while($num < 10) {
+    while($num <= 10) {
       echo $num . '<br>';
       $num++;
     }
