@@ -15,6 +15,10 @@
     while($num <= 10) {
       echo $num . '<br>';
       $num++; //incremento - critério de parada
+
+      //break; //interrompe o loop
+
+      //continue; //pula a iteração atual
     }
     echo '--- Final do Loop --';
   ?>  
