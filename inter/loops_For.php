@@ -35,13 +35,10 @@
     //continue
     echo "O valor de x é: $x <br>";
   }
-
+  echo "<hr>";
   // Sintaxe For com break e decremento
-  for ($x = 10; true; $x--) {
-
-      if ($x > 0) {
-        break;
-      }
+  for ($x = 10; $x > 0 ; $x--) {
+      //break
       //continue
       echo "O valor de x é: $x <br>";
     }
