@@ -24,8 +24,5 @@
     echo "Números sorteados: " . implode(", ", $numbers);
     ?>
   </p>
-  <?php
-
-  ?>
 </body>
 </html>
