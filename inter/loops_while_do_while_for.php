@@ -17,8 +17,12 @@
     ['titulo' => 'Título notícia 4', 'conteudo' => 'Conteúdo notícia 4'],
     ['titulo' => 'Título notícia 5', 'conteudo' => 'Conteúdo notícia 5'],
   ];
-
-  print_r($registros);
+  
+  $idx = 0;
+  while ( $idx < 5){
+    echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
+    $idx++;
+  }
 
   ?>  
 </body>
