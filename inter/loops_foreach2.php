@@ -10,6 +10,11 @@
   <h1> ForEach </h1>
   <?php 
 
+  $players = ['Messi', 'Lamine Yamal', 'Iniesta', 'Xavi', 'Suárez'];
+
+  foreach($players as $player) {
+    echo $player . '<br>';
+  }
   ?>  
 </body>
 </html>
