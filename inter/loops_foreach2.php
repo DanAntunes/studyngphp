@@ -13,7 +13,7 @@
   $players = ['Messi', 'Lamine Yamal', 'Iniesta', 'Xavi', 'Suárez'];
  // O token '=>' é o operador de associação de array, que associa um valor a uma chave.
   foreach($players as $i => $player) {
-    echo $player . '<br>';
+    echo "Índice: $i<br> Jogador: $player<br><br>";
   }
   ?>  
 </body>
