@@ -29,6 +29,21 @@
     echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
     $idx++;
   }
+  $idx = 0;
+  do {
+    echo '<h2> Usando o do while </h2>';
+    echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
+    echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
+    echo '<br>';
+    $idx++;
+  } while ( $idx < count($registros) );
+
+  for ($idx = 0; $idx < count($registros); $idx++) {
+    echo '<h2> Usando o for </h2>';
+    echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
+    echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
+    echo '<hr>';
+  }
 
   ?>  
 </body>
