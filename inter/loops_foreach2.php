@@ -10,7 +10,12 @@
   <h1> ForEach </h1>
   <?php 
 
-  $players = ['Messi', 'Lamine Yamal', 'Iniesta', 'Xavi', 'Suárez'];
+  $players = [
+   '' => 'Messi', 
+   '' => 'Lamine Yamal', 
+   '' => 'Iniesta', 
+   '' => 'Xavi', 
+   '' => 'Suárez'];
  // O token '=>' é o operador de associação de array, que associa um valor a uma chave.
   foreach($players as $i => $player) {
     echo "Índice: $i<br> Jogador: $player<br><br>";
