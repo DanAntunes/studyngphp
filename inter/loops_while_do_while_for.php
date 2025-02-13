@@ -21,6 +21,7 @@
   $idx = 0;
   while ( $idx < 5){
     echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
+    echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
     $idx++;
   }
 
