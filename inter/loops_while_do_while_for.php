@@ -17,9 +17,14 @@
     ['titulo' => 'Título notícia 4', 'conteudo' => 'Conteúdo notícia 4'],
     ['titulo' => 'Título notícia 5', 'conteudo' => 'Conteúdo notícia 5'],
   ];
+
+  //conunt -> conta a quantidade de elementos de um array
+
+  echo 'O array possui: ' . count($registros) . ' registros<br>';
+  echo '<br>';
   
   $idx = 0;
-  while ( $idx < 5){
+  while ( $idx < count($registros) ) {
     echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
     echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
     $idx++;
