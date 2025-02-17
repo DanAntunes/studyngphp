@@ -13,15 +13,17 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./src/app.css">
   </head>
-
   <body>
-
+    
+   <header>
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="./public/image/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
-      </a>
-    </nav>
+        <a class="navbar-brand" href="#">
+          <img src="./public/image/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          App Help Desk
+        </a>
+      </nav>
+   </header>
+
 
     <div class="container">    
       <div class="row">
