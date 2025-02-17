@@ -13,8 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./src/app.css">
   </head>
-  <body>
-    
+<body>
    <header>
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
@@ -24,15 +23,14 @@
       </nav>
    </header>
 
-
-    <div class="container">    
+   <main class="container">    
       <div class="row">
-
         <div class="card-login">
           <div class="card">
             <div class="card-header">
               Login
             </div>
+            
             <div class="card-body">
               <form>
                 <div class="form-group">
@@ -46,6 +44,6 @@
             </div>
           </div>
         </div>
-    </div>
-  </body>
+</main>
+</body>
 </html>
