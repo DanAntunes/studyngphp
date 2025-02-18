@@ -14,12 +14,16 @@
 </head>
   <body>
 
+  <header>
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <figure class="mb-0">
+          <img src="./public/image/logo.png" alt="Logo App Help Desk" class="d-inline-block align-top logo">
+        </figure>
+        <span>App Help Desk</span>
       </a>
     </nav>
+  </header>
 
     <div class="container">    
       <div class="row">
