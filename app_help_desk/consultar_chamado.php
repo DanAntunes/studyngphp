@@ -12,7 +12,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./src/app.css">
 </head>
-  <body>
+<body>
   <!-- Cabeçalho com navegação -->
   <header>
     <nav class="navbar navbar-dark bg-dark">
@@ -25,44 +25,48 @@
     </nav>
   </header>
 
-    <div class="container">    
-      <div class="row">
-
-        <div class="card-consultar-chamado">
-          <div class="card">
-            <div class="card-header">
-              Consulta de chamado
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <section aria-labelledby="consulta-chamado-title">
+      <article class="card">
+        <header class="card-header">
+          <h2 id="consulta-chamado-title" class="mb-0">Consulta de chamado</h2>
+        </header>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <!-- Card de chamado individual -->
+              <article class="card mb-3 bg-light">
+                <div class="card-body">
+                  <h3 class="card-title">Título do chamado...</h3>
+                  <h4 class="card-subtitle mb-2 text-muted">Categoria</h4>
+                  <p class="card-text">Descrição do chamado...</p>
+                </div>
+              </article>
+              <!-- Outro card de chamado -->
+              <article class="card mb-3 bg-light">
+                <div class="card-body">
+                  <h3 class="card-title">Título do chamado...</h3>
+                  <h4 class="card-subtitle mb-2 text-muted">Categoria</h4>
+                  <p class="card-text">Descrição do chamado...</p>
+                </div>
+              </article>
             </div>
-            
-            <div class="card-body">
-              
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
-
-                </div>
-              </div>
-
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
-
-                </div>
-              </div>
-
-              <div class="row mt-5">
-                <div class="col-6">
-                  <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
-                </div>
-              </div>
+          </div>
+          <!-- Botão de voltar -->
+          <div class="row mt-5">
+            <div class="col-6">
+              <button class="btn btn-lg btn-warning btn-block" type="button">Voltar</button>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </body>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-3">
+    <small>&copy; 2025 App Help Desk. Todos os direitos reservados.</small>
+  </footer>
+</body>
 </html>
