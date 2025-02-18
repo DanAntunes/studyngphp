@@ -1,3 +1,7 @@
+*{
+  font-family: 'jetbrains mono', monospace;
+}
+
 .logo {
   width: 30px;
   height: 30px;
