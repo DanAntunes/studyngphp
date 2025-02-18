@@ -12,8 +12,8 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./src/app.css">
 </head>
-  <body>
-
+<body>
+  <!-- Cabeçalho com navegação -->
   <header>
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
@@ -25,26 +25,34 @@
     </nav>
   </header>
 
-    <div class="container">    
-      <div class="row">
-
-        <div class="card-home">
-          <div class="card">
-            <div class="card-header">
-              Menu
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <section aria-labelledby="menu-title">
+      <article class="card card-home">
+        <header class="card-header">
+          <h2 id="menu-title" class="mb-0">Menu</h2>
+        </header>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+              <a href="abrir_chamado.html" title="Abrir Chamado">
+                <img src="formulario_abrir_chamado.png" width="70" height="70" alt="Formulário para abrir chamado">
+              </a>
             </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-6 d-flex justify-content-center">
-                  <img src="formulario_abrir_chamado.png" width="70" height="70">
-                </div>
-                <div class="col-6 d-flex justify-content-center">
-                  <img src="formulario_consultar_chamado.png" width="70" height="70">
-                </div>
-              </div>
+            <div class="col-6 d-flex justify-content-center">
+              <a href="consultar_chamado.html" title="Consultar Chamado">
+                <img src="formulario_consultar_chamado.png" width="70" height="70" alt="Formulário para consultar chamado">
+              </a>
             </div>
           </div>
         </div>
-    </div>
-  </body>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-3">
+    <small>&copy; 2025 App Help Desk. Todos os direitos reservados.</small>
+  </footer>
+</body>
 </html>
