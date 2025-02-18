@@ -19,8 +19,8 @@
       <a class="navbar-brand" href="#">
         <figure class="mb-0">
           <img src="./public/image/logo.png" alt="Logo App Help Desk" class="d-inline-block align-top logo">
+          <span>App Help Desk</span>
         </figure>
-        <span>App Help Desk</span>
       </a>
     </nav>
   </header>
