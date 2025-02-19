@@ -1,4 +1,6 @@
 <?php
+  //variavel que verifica se a autenticação foi realizada
+  $usuario_autenticado = false;
 
   //usuarios do sistema
   $usuarios_app = array(
@@ -7,7 +9,7 @@
   );
   // $_GET['email'];
   // $_GET['senha'];
-  
+
  foreach($usuarios_app as $user) {
    if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']) {
      $usuario_autenticado = true;
