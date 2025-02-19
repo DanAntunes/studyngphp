@@ -19,7 +19,7 @@
   if($usuario_autenticado) {
     echo 'Usuário autenticado';
   } else {
-    header('Location: index.php?login=erro');
+    echo 'Erro na autenticação do usuário';
   }
 
   $_POST['email'];
