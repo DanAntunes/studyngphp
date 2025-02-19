@@ -16,6 +16,12 @@
    }
   };
 
+  if($usuario_autenticado) {
+    echo 'Usuário autenticado';
+  } else {
+    header('Location: index.php?login=erro');
+  }
+
   $_POST['email'];
   $_POST['senha'];
 ?>
