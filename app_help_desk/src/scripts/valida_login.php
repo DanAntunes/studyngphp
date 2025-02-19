@@ -19,7 +19,7 @@
   if($usuario_autenticado) {
     echo 'Usuário autenticado';
   } else {
-    echo 'Erro na autenticação do usuário';
+    header('Location: /phpstudy/app_help_desk/index.php?login=erro');
   }
 
   $_POST['email'];
