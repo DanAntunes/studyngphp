@@ -42,6 +42,17 @@
               <label for="senha" class="sr-only">Senha</label>
               <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
             </div>
+            <? if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
+              <div class="text-danger">
+                Usuário ou senha inválido(s)
+              </div>
+            <? } ?>
+            <!-- Esse jeito não é muito legal de se fazer, pós mistura os elementos php com html -->
+            <!-- <?php
+              // if(isset($_GET['login']) && $_GET['login'] == 'erro') {
+              //   echo '<div class="text-danger">Usuário ou senha inválido(s)</div>';
+              // }
+            ?> -->
             <button type="submit" class="btn btn-lg btn-info btn-block">Entrar</button>
           </form>
         </div>
