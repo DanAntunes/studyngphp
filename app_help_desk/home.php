@@ -36,12 +36,12 @@
           <div class="row">
             <div class="col-6 d-flex justify-content-center">
               <a href="abrir_chamado.html" title="Abrir Chamado">
-                <img src="formulario_abrir_chamado.png" width="70" height="70" alt="Formulário para abrir chamado">
+                <img src="./public/image/formulario_abrir_chamado.pngq" width="70" height="70" alt="Formulário para abrir chamado">
               </a>
             </div>
             <div class="col-6 d-flex justify-content-center">
               <a href="consultar_chamado.html" title="Consultar Chamado">
-                <img src="formulario_consultar_chamado.png" width="70" height="70" alt="Formulário para consultar chamado">
+                <img src="./public/image/formulario_consultar_chamado.png" width="70" height="70" alt="Formulário para consultar chamado">
               </a>
             </div>
           </div>
