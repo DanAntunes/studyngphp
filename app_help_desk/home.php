@@ -39,12 +39,12 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
         <div class="card-body">
           <div class="row">
             <div class="col-6 d-flex justify-content-center">
-              <a href="abrir_chamado.html" title="Abrir Chamado">
+              <a href="abrir_chamado.php" title="Abrir Chamado">
                 <img src="./public/image/formulario_abrir_chamado.png" width="70" height="70" alt="Formulário para abrir chamado">
               </a>
             </div>
             <div class="col-6 d-flex justify-content-center">
-              <a href="consultar_chamado.html" title="Consultar Chamado">
+              <a href="consultar_chamado.php" title="Consultar Chamado">
                 <img src="./public/image/formulario_consultar_chamado.png" width="70" height="70" alt="Formulário para consultar chamado">
               </a>
             </div>
