@@ -1,4 +1,7 @@
 <?php
+
+  session_start();
+
   //variavel que verifica se a autenticação foi realizada
   $usuario_autenticado = false;
 
@@ -18,7 +21,9 @@
 
   if($usuario_autenticado) {
     echo 'Usuário autenticado';
+    $_SESSION['authenticado'] = 'SIM';
   } else {
+    $_SESSION['authenticado'] = 'NÃO';
     header('Location: /phpstudy/app_help_desk/index.php?login=erro');
   }
 
