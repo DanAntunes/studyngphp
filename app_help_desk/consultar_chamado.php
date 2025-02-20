@@ -60,7 +60,7 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
           <!-- Botão de voltar -->
           <div class="row mt-5">
             <div class="col-6">
-              <button class="btn btn-lg btn-warning btn-block" type="button">Voltar</button>
+            <a class="btn btn-lg btn-warning btn-block" href="home.php">Voltar</a>
             </div>
           </div>
         </div>
