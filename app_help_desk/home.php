@@ -40,7 +40,7 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
           <div class="row">
             <div class="col-6 d-flex justify-content-center">
               <a href="abrir_chamado.html" title="Abrir Chamado">
-                <img src="./public/image/formulario_abrir_chamado.pngq" width="70" height="70" alt="Formulário para abrir chamado">
+                <img src="./public/image/formulario_abrir_chamado.png" width="70" height="70" alt="Formulário para abrir chamado">
               </a>
             </div>
             <div class="col-6 d-flex justify-content-center">
