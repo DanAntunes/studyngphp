@@ -20,10 +20,10 @@
   };
 
   if($usuario_autenticado) {
-    echo 'Usuário autenticado';
-    $_SESSION['authenticado'] = 'SIM';
+    $_SESSION['autenticado'] = 'SIM';
+    header('Location: /phpstudy/app_help_desk/home.php');
   } else {
-    $_SESSION['authenticado'] = 'NÃO';
+    $_SESSION['autenticado'] = 'NÃO';
     header('Location: /phpstudy/app_help_desk/index.php?login=erro');
   }
 
