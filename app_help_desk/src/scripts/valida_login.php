@@ -22,9 +22,11 @@
   if($usuario_autenticado) {
     $_SESSION['autenticado'] = 'SIM';
     header('Location: /phpstudy/app_help_desk/home.php');
+    exit;
   } else {
     $_SESSION['autenticado'] = 'NÃO';
     header('Location: /phpstudy/app_help_desk/index.php?login=erro');
+    exit;
   }
 
   $_POST['email'];
