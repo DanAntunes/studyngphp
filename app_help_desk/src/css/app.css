@@ -7,6 +7,18 @@
   height: 30px;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  /* Suporte para propriedade flex em navegadores legados */
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
 .card-home {
   padding: 30px 0 0 0;
   width: 100%;
@@ -29,4 +41,16 @@
   padding: 30px 0 0 0;
   width: 100%;
   margin: 0 auto;
+}
+
+footer {
+  padding: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
 }
