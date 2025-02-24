@@ -28,7 +28,7 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
       </a>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="logoff.php">
+          <a class="nav-link" href="./src/scripts/logoff.php">
             SAIR
           </a>
         </li>
