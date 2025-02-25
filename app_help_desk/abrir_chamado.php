@@ -44,7 +44,7 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
           <h2 id="chamado-title" class="mb-0">Abertura de chamado</h2>
         </header>
         <div class="card-body">
-          <form action="#" method="post">
+          <form action="http://localhost/phpstudy/app_help_desk/src/scripts/registra_chamado.php" method="post">
             <div class="form-group">
               <label for="titulo">Título</label>
               <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título" required>
