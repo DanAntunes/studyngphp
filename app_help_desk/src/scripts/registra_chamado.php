@@ -20,5 +20,6 @@
   //fechando o arquivo
  fclose($arquivo);
  //echo $text;
+ header('Location: /phpstudy/app_help_desk/abrir_chamado.php');
 
 ?>
