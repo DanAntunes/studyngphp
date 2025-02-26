@@ -3,20 +3,19 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
 ?>
 
 <?php
-   //
-   $chamados = [];
+  //chamados
+  $chamados = array();
   // Abrir o arquivo.hd
   $arquivo = fopen('./src/scripts/arquivo.hd', 'r');
 
   // Enquanto houver registros (linhas) a serem recuperados
   while (!feof($arquivo)) {// testa pelo fim de um arquivo
     //linhas
-  $registro = fgets($arquivo);
-  $chamados[] = $registro;
+    $registro = fgets($arquivo);
+    $chamados[] = $registro;
   };
   //fechar o arquivo aberto
   fclose($arquivo);
-
 ?>
 
 <!DOCTYPE html>
@@ -61,21 +60,24 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
           <h2 id="consulta-chamado-title" class="mb-0">Consulta de chamado</h2>
         </header>
         <div class="card-body">
-          <? foreach($chamados as $chamados) { ?>
+          <?php foreach($chamados as $chamado) { ?>
+            <?php 
+              $chamado_dados = explode('#',$chamado);
+            ?>
           <div class="row">
             <div class="col">
               <!-- Card de chamado individual -->
               <article class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h3 class="card-title">Título do chamado...</h3>
-                  <h4 class="card-subtitle mb-2 text-muted">Categoria</h4>
-                  <p class="card-text">Descrição do chamado...</p>
+                  <h3 class="card-title"><?=$chamado_dados[0]?></h3>
+                  <h4 class="card-subtitle mb-2 text-muted"><?=$chamado_dados[1]?></h4>
+                  <p class="card-text"><?=$chamado_dados[2]?></p>
                 </div>
               </article>
             </div>
           </div>
-          
-          <? } ?>
+
+          <?php } ?>
           <!-- Botão de voltar -->
           <div class="row mt-5">
             <div class="col-6">
