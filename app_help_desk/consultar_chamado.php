@@ -61,6 +61,7 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
           <h2 id="consulta-chamado-title" class="mb-0">Consulta de chamado</h2>
         </header>
         <div class="card-body">
+          <? foreach($chamados as $chamados) { ?>
           <div class="row">
             <div class="col">
               <!-- Card de chamado individual -->
@@ -71,16 +72,10 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
                   <p class="card-text">Descrição do chamado...</p>
                 </div>
               </article>
-              <!-- Outro card de chamado -->
-              <article class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h3 class="card-title">Título do chamado...</h3>
-                  <h4 class="card-subtitle mb-2 text-muted">Categoria</h4>
-                  <p class="card-text">Descrição do chamado...</p>
-                </div>
-              </article>
             </div>
           </div>
+          
+          <? } ?>
           <!-- Botão de voltar -->
           <div class="row mt-5">
             <div class="col-6">
