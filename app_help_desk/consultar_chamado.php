@@ -3,17 +3,20 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
 ?>
 
 <?php
-
+   //
+   $chamados = [];
   // Abrir o arquivo.hd
-  $arquivo = fopen('/src/scripts/arquivo.hd', 'r');
+  $arquivo = fopen('./src/scripts/arquivo.hd', 'r');
 
   // Enquanto houver registros (linhas) a serem recuperados
   while (!feof($arquivo)) {// testa pelo fim de um arquivo
     //linhas
-   fgets($arquivo);
+  $registro = fgets($arquivo);
+  $chamados[] = $registro;
   };
   //fechar o arquivo aberto
   fclose($arquivo);
+
 ?>
 
 <!DOCTYPE html>
