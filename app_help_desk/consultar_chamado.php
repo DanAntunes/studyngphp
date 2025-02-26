@@ -63,6 +63,10 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
           <?php foreach($chamados as $chamado) { ?>
             <?php 
               $chamado_dados = explode('#',$chamado);
+
+              if (count($chamado_dados) < 3) {
+                continue;
+              };
             ?>
           <div class="row">
             <div class="col">
