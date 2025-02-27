@@ -4,6 +4,7 @@
 
   //variavel que verifica se a autenticação foi realizada
   $usuario_autenticado = false;
+  $usuario_id = null;
 
   //usuarios do sistema
   $usuarios_app = array(
@@ -18,11 +19,13 @@
  foreach($usuarios_app as $user) {
    if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']) {
      $usuario_autenticado = true;
+     $usuario_id = $user['id'];
    }
   };
 
   if($usuario_autenticado) {
     $_SESSION['autenticado'] = 'SIM';
+    $_SESSION['id'] = $usuario_id;
     header('Location: /phpstudy/app_help_desk/home.php');
     exit;
   } else {
