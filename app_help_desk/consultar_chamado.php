@@ -62,11 +62,17 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
         <div class="card-body">
           <?php foreach($chamados as $chamado) { ?>
             <?php 
-              $chamado_dados = explode('#',$chamado);
+            $chamado_dados = explode('#', $chamado);
 
-              if (count($chamado_dados) < 3) {
+            if ($_SESSION['profile_id'] == 2) {
+              //Só vamos exibir o chamado, se ele for criado pelo usuário.
+              if($_SESSION['id'] != $chamado_dados[0]) {
                 continue;
-              };
+              }
+            }
+            if (count($chamado_dados) < 3) {
+                continue;
+            };
             ?>
           <div class="row">
             <div class="col">
