@@ -7,8 +7,10 @@
 
   //usuarios do sistema
   $usuarios_app = array(
-    array('email' => 'adm@teste.com.br', 'senha' => '123456'),
-    array('email' => 'user@teste.com.br', 'senha' => 'abcd'),
+    array('id' => 1 , 'email' => 'adm@teste.com.br', 'senha' => '1234'),
+    array('id' => 2 , 'email' => 'user@teste.com.br', 'senha' => '1234'),
+    array('id' => 3 , 'email' => 'dan@teste.com.br', 'senha' => '1234'),
+    array('id' => 4 , 'email' => 'nilo@teste.com.br', 'senha' => '1234'),
   );
   // $_GET['email'];
   // $_GET['senha'];
