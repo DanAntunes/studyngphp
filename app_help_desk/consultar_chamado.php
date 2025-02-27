@@ -73,9 +73,9 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
               <!-- Card de chamado individual -->
               <article class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h3 class="card-title"><?=$chamado_dados[0]?></h3>
-                  <h4 class="card-subtitle mb-2 text-muted"><?=$chamado_dados[1]?></h4>
-                  <p class="card-text"><?=$chamado_dados[2]?></p>
+                  <h3 class="card-title"><?=$chamado_dados[1]?></h3>
+                  <h4 class="card-subtitle mb-2 text-muted"><?=$chamado_dados[2]?></h4>
+                  <p class="card-text"><?=$chamado_dados[3]?></p>
                 </div>
               </article>
             </div>
