@@ -8,7 +8,7 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
   $chamados = array();
 
   //abrir o arquivo.hd
-  $arquivo = fopen('./src/scripts/arquivo.hd', 'r');
+  $arquivo = fopen('../../../app_help_desk/arquivo.hd', 'r');
 
   //enquanto houver registros (linhas) a serem recuperados
   while(!feof($arquivo)) { //testa pelo fim de um arquivo
