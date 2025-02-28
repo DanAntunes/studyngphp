@@ -3,20 +3,41 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
 ?>
 
 <?php
+
   //chamados
   $chamados = array();
-  // Abrir o arquivo.hd
+
+  //abrir o arquivo.hd
   $arquivo = fopen('./src/scripts/arquivo.hd', 'r');
 
-  // Enquanto houver registros (linhas) a serem recuperados
-  while (!feof($arquivo)) {// testa pelo fim de um arquivo
-    //linhas
+  //enquanto houver registros (linhas) a serem recuperados
+  while(!feof($arquivo)) { //testa pelo fim de um arquivo
+    //linhas  
     $registro = fgets($arquivo);
-    $chamados[] = $registro;
-  };
+
+    //explode dos detalhes do registro para verificar o id do usuário responsável pelo cadastro
+    $registro_detalhes = explode('#', $registro);
+
+    if($_SESSION['profile_id'] == 2) {
+
+      //se usuário autenticado não for o usuário de abertura do chamado então não faz nada
+      if($_SESSION['id'] != $registro_detalhes[0]) {
+        continue; //não faz nada
+
+      } else {
+        $chamados[] = $registro; //adiciona o registro do arquivo ao array $chamados
+      }
+
+    } else {
+      $chamados[] = $registro; //adiciona o registro do arquivo ao array $chamados
+    }
+
+  }
+
   //fechar o arquivo aberto
   fclose($arquivo);
-?>
+
+  ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -60,20 +81,18 @@ require_once __DIR__ . '/src/scripts/validador_acesso.php';
           <h2 id="consulta-chamado-title" class="mb-0">Consulta de chamado</h2>
         </header>
         <div class="card-body">
-          <?php foreach($chamados as $chamado) { ?>
-            <?php 
-            $chamado_dados = explode('#', $chamado);
+        <?php foreach($chamados as $chamado) { ?>
+              
+              <?php
 
-            if ($_SESSION['profile_id'] == 2) {
-              //Só vamos exibir o chamado, se ele for criado pelo usuário.
-              if($_SESSION['id'] != $chamado_dados[0]) {
-                continue;
-              }
-            }
-            if (count($chamado_dados) < 3) {
-                continue;
-            };
-            ?>
+                $chamado_dados = explode('#', $chamado);
+
+                //não existe detalhes do chamado se ele não estiver completo
+                if(count($chamado_dados) < 3) {
+                  continue;
+                }
+
+              ?>
           <div class="row">
             <div class="col">
               <!-- Card de chamado individual -->
