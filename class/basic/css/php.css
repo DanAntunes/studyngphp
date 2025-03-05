@@ -1,0 +1,10 @@
+*{
+  font-family: 'jetbrains mono', monospace;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  color: red;
+}
