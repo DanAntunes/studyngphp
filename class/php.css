@@ -1,0 +1,9 @@
+*{
+  font-family: 'jetbrains mono', monospace;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+}
