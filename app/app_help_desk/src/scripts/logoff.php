@@ -10,6 +10,6 @@
   session_start();
 
   session_destroy();
-  header('Location: /phpstudy/app_help_desk/index.php');
+  header('Location: /phpstudy/app/app_help_desk/index.php');
 
 ?>
