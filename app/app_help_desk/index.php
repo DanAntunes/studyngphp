@@ -33,7 +33,7 @@
           <h2 id="login-title" class="mb-0">Login</h2>
         </header>
         <div class="card-body">
-          <form action="http://localhost/phpstudy/app_help_desk/src/scripts/valida_login.php" method="post">
+          <form action="http://localhost/phpstudy/app/app_help_desk/src/scripts/valida_login.php" method="post">
             <div class="form-group">
               <label for="email" class="sr-only">E-mail</label>
               <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
