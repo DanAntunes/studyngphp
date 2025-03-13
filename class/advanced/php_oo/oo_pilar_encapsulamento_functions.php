@@ -16,11 +16,11 @@
     public $humor = 'Triste';
 
     public function __get($attr){
-      return $this->$attr;
-    }
+       return $this->$attr;
+     }
 
-    public function __set($attr, $value){
-      $this->$attr = $value;
+     public function __set($attr, $value){
+       $this->$attr = $value;
     }
 
     private function executarMania(){
@@ -42,14 +42,36 @@
     }
   }
 
-  $pai = new Pai();
-  echo $pai->sobrenome;
-  $pai->sobrenome = 'Tavares';
+  class Filho extends Pai {
+    public function __construct(){
+        //Exibir os métodos do objeto
+        echo '<pre>';
+        print_R(get_class_methods($this));
+        echo '</pre>';
+    }
+
+    private function executarMania(){
+      echo 'Cantar';
+    }
+
+    public function x(){
+      $this->executarMania();
+    }
+
+    protected function responder(){
+      echo 'Olá';
+    }
+  }
+
+  $filho = new Filho();
+  echo '<pre>';
+  print_r($filho);
+  echo '</pre>';
+
+  $filho->executarAcao();
   echo '<br>';
-  echo $pai->sobrenome;
-  echo '<hr>';
-  echo '<h3> Função </h3>';
-  echo $pai->executarAcao();
+  $filho->x();
+
 
   ?>
 
