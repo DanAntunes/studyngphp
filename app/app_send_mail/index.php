@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<div class="container"> 
+		<main class="container"> 
 
 			<div class="py-3 text-center">
 				<img class="d-block mx-auto mb-2" src="./src/image/logo.png" alt="" width="72" height="72">
@@ -41,6 +41,6 @@
 				</div>
       		</div>
      </div>
-		</div>
+</main>
 	</body>
 </html>
