@@ -9,15 +9,22 @@
 <body>
   <h1>Promoção de propriedade de construtor</h1>
   <?php
-    class Produto {
-      public string $nome = "";
-      public float $valor = 0;
+    // class Produto {
+    //   public string $nome = "";
+    //   public float $valor = 0;
 
-      public function __construct($nome, $valor)
-      {
-        $this->nome = $nome;
-        $this->valor = $valor;
-      }
+    //   public function __construct($nome, $valor)
+    //   {
+    //     $this->nome = $nome;
+    //     $this->valor = $valor;
+    //   }
+    // }
+
+    class Produto {
+      public function __construct(
+        public string $nome = "",
+        public float $valor = 0
+      ){}
     }
 
     $produto = new Produto('Smartphone', 1500);
